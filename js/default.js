@@ -1,5 +1,9 @@
 var time = 300;
 
+//カウントダウン表示
+var Counter = function(){
+}
+
 //毎秒処理の中身、カウントダウン
 var update = function(){
   if(time === 0){
@@ -11,6 +15,7 @@ var update = function(){
     }
   }
   time--;
+  Counter();
   refresh();
 }
 
@@ -19,12 +24,4 @@ var refresh = function(){
   setTimeout(update, 1000);
 }
 update();
-
-
-//カウントダウンの時間を加速させるプログラム
-
-//カウントダウンを表示するためのプログラム
-
 //時計以外の装飾のためのプログラム
-
-//ウィンドウっぽいものを表示するプログラム
