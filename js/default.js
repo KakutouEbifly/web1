@@ -17,7 +17,8 @@ var Counter = function(){
   if(time < 60){
     document.write("<p id=jikan>", "0:", timeShow_S, "</p>");
   }else{
-    document.write("<p id=jikanYaba>", timeShow_M, ":", timeShow_S, "</p>");
+    document.write("<p id=jikanYaba>", timeShow_M, ":");
+    document.write(timeShow_S, "</p>");
   }
 }
 
