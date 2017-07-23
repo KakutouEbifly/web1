@@ -29,9 +29,8 @@ var Counter = function(){
   timeShow_S = time % 60;
   
   //分と秒を表示
-  //document.write("<div id=jikan>", timeShow_M, ":", timeShow_S, "</div>");
-  document.ktimer.counter.value("<div id=jikan>", timeShow_M, ":", timeShow_S, "</div>");
-  /*= count_format(count);*/
+  var count_down = document.getElementById("default");
+  count_down.innerHTML ="<div id=jikan>" + timeShow_M +"：" + timeShow_S + "</div>";
 }
 
 //滅亡ボタン押した？
