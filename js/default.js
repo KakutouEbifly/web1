@@ -31,7 +31,7 @@ var Counter = function(){
   
   //分と秒を表示
   var count_down = document.getElementById("jikan");
-  count_down.innerHTML =timeShow_M +"：" + timeShow_S;
+  count_down.innerHTML =("0"+timeShow_M).slice(-2) +"：" + ("0"+timeShow_S).slice(-2);
 }
 
 //滅亡ボタン押した？
