@@ -8,7 +8,7 @@ var Counter = function(){
   //分と秒を設定
   if(time > 60){
     timeShow_M = Math.floor(time/60);
-    timeShow = time - timeShow_M * 60;
+    timeShow = time - (timeShow_M * 60);
   }else{
     timeShow_S = time;
   }
