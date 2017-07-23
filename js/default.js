@@ -43,7 +43,7 @@ var update = function(){
 
 //update関数の処理時間設定
 var refresh = function(){
-  setTimeout(update, 1000);
+  setTimeout(update, 100000);
 }
 
 update();
