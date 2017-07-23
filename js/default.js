@@ -1,6 +1,6 @@
 var time = 300;
 
-
+/*
 //カウンドダウン表示
     function count_down(){
         if(count === 1){
@@ -15,6 +15,7 @@ var time = 300;
             count_down.innerHTML = ("0"+min).slice(-2) +"：" + ("0"+sec).slice(-2);
         }
     }　
+*/
 
 //カウントダウン表示
 var Counter = function(){
@@ -29,7 +30,7 @@ var Counter = function(){
   timeShow_S = time % 60;
   
   //分と秒を表示
-  var count_down = document.getElementById("default");
+  var count_down = document.getElementById();
   count_down.innerHTML ="<div id=jikan>" + timeShow_M +"：" + timeShow_S + "</div>";
 }
 
