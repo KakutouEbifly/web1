@@ -5,6 +5,10 @@ title{
   background-color: black;
 }
 
+*{
+  background-color: black;
+}
+
 //時間によるタイマーと背景色
 #jikan{
   background-color: yellow;
