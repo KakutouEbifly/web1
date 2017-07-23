@@ -1,7 +1,7 @@
 var time = 300;
 
 //カウントダウン表示
-var Counter = function(){
+var Counter = function(time){
   var timeShow_M = 0;
   var timeShow_S;
   
@@ -29,14 +29,14 @@ var downfall = function(){
 }
 
 //毎秒処理の中身、カウントダウン
-var update = function(){
+var update = function(time){
   do{
       if(time === 0){
        break;
       } 
       //downfall();
       time--;
-      Counter();
+      Counter(time);
       refresh();
   }while(true);
 }
@@ -46,4 +46,4 @@ var refresh = function(){
   setTimeout(update, 1000);
 }
 
-update();
+update(time);
