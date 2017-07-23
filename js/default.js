@@ -22,7 +22,7 @@ var Counter = function(){
 }
 
 //滅亡ボタン押した？
-var downfall = fanction(){
+var downfall = function(){
   if(ret == true){
     time -= 10;
   }
@@ -34,7 +34,7 @@ var update = function(){
       if(time === 0){
        break;
       } 
-      //downfall()
+      downfall();
       time--;
       Counter();
       refresh();
