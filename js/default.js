@@ -3,7 +3,7 @@ var time = 300;
 //カウントダウン表示
 var Counter = function(){
   
-  document.getElementById("jikan").style.display="block";
+  //document.getElementById("jikan").style.display="block";
   
   var timeShow_M = 0;
   var timeShow_S;
