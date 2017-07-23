@@ -2,26 +2,45 @@ var time = 300;
 
 //カウントダウン表示
 var Counter = function(){
+  var timeShow_M = 0;
+  var timeShow_S;
+  
+  //分と秒を設定
+  if(time > 60){
+    timeShow_M = Math.floor(time/60);
+    timeShow = time - timeShow_M * 60;
+  }else{
+    timeShow_S = time;
+  }
+  
+  //分と秒を表示
+  if(time < 60){
+    document.write("<p id=jikan>0:" + timeShow_S + "</p>");
+  }else{
+    document.write("<p id=jikan_yaba>" + timeShow_M + ":" + timeShow_S + "</p>");
+  }
 }
 
 //毎秒処理の中身、カウントダウン
 var update = function(){
-  if(time === 0){
-    break;
-  } 
-  function downfall{
-    if(ret == true){
-      time -= 10;
-    }
-  }
-  time--;
-  Counter();
-  refresh();
+  do{
+      if(time === 0){
+       break;
+      } 
+      function downfall{
+       if(ret == true){
+       time -= 10;
+       }
+      }
+      time--;
+      Counter();
+      refresh();
+  }while(true);
 }
 
 //update関数の処理時間設定
 var refresh = function(){
   setTimeout(update, 1000);
 }
+
 update();
-//時計以外の装飾のためのプログラム
