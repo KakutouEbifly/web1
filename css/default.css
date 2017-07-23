@@ -8,6 +8,7 @@ title{
 *{
   background-color: black;
   text-align: center;
+  color:  red;
 }
 
 //時間によるタイマーと背景色
@@ -22,7 +23,6 @@ title{
     display: inline-block;
     padding: 0.25em 0.5em;
     text-decoration: none;
-    color: red;
     background: #03A9F4;/*色*/
     border: solid 1px #0f9ada;/*線色*/
     border-radius: 4px;
