@@ -34,7 +34,7 @@ var update = function(){
       if(time === 0){
        break;
       } 
-      downfall()
+      //downfall()
       time--;
       Counter();
       refresh();
