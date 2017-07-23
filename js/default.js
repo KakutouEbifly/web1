@@ -12,11 +12,15 @@ var downfall(){
 	else{
 		window.alert('キャンセルされました'); // 警告ダイアログを表示
 	}
-    
+   
+}
+
+var time(){
     space -= 50;
     
     if(space == 0){
         location.href = "https://matome.naver.jp/odai/2146885392202874001";
     }
     setTimeout(downfall, space);
+    setTimeout(time, space);
 }
