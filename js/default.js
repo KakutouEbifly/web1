@@ -21,17 +21,20 @@ var Counter = function(){
   }
 }
 
+//滅亡ボタン押した？
+var downfall = fanction(){
+  if(ret == true){
+    time -= 10;
+  }
+}
+
 //毎秒処理の中身、カウントダウン
 var update = function(){
   do{
       if(time === 0){
        break;
       } 
-      function downfall{
-       if(ret == true){
-       time -= 10;
-       }
-      }
+      downfall()
       time--;
       Counter();
       refresh();
