@@ -4,3 +4,15 @@ title{
   color: red;
   background-color: black;
 }
+
+//時間によるタイマーと背景色
+#jikan{
+  background-color: black;
+  color: blue;
+  text-align: center;
+}
+#jikan_yaba{
+  background-color: yellow;
+  color:red;
+  text-align: center;
+}
