@@ -24,3 +24,8 @@ var time(){
     setTimeout(downfall, space);
     setTimeout(time, space);
 }
+
+var flag(){
+	downfall();
+	time();
+}
