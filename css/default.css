@@ -7,18 +7,18 @@ title{
 
 *{
   background-color: black;
+  text-align: center;
 }
 
 //時間によるタイマーと背景色
 #jikan{
   background-color: yellow;
   color:red;
-  text-align: center;
   //font-size:  300px;
 }
 
 #axcel {
-    position: /*relative*/center;
+    position: relative;
     display: inline-block;
     padding: 0.25em 0.5em;
     text-decoration: none;
