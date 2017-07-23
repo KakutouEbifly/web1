@@ -1,5 +1,21 @@
 var time = 300;
 
+
+//カウンドダウン表示
+    function count_down(){
+        if(count === 1){
+            var display = document.getElementById("default");
+            display.innerHTML = "TIME UP!";
+            clearInterval(stp);
+        } else {
+            count--;
+            min = parseInt(count / 60);
+            sec = count % 60;
+            var count_down = document.getElementById("default");
+            count_down.innerHTML = ("0"+min).slice(-2) +"：" + ("0"+sec).slice(-2);
+        }
+    }　
+
 //カウントダウン表示
 var Counter = function(){
   
@@ -9,19 +25,13 @@ var Counter = function(){
   var timeShow_S;
   
   //分と秒を設定
-  if(time < 60){
-    timeShow_S = time;
-  }else{
-    timeShow_M = Math.floor(time/60);
-    timeShow_S = time - (timeShow_M * 60);
-  }
+  timeShow_M = Math.floor(time / 60);
+  timeShow_S = time % 60;
   
   //分と秒を表示
-  if(time < 60){
-    document.write("<div id=jikan>", "0:", timeShow_S, "</div>");
-  }else{
-    document.write("<div id=jikan>", timeShow_M, ":", timeShow_S, "</div>");
-  }
+  //document.write("<div id=jikan>", timeShow_M, ":", timeShow_S, "</div>");
+  document.ktimer.counter.value("<div id=jikan>", timeShow_M, ":", timeShow_S, "</div>");
+  /*= count_format(count);*/
 }
 
 //滅亡ボタン押した？
@@ -37,7 +47,6 @@ var update = function(){
       if(time === 0){
        break;
       } 
-      //downfall();
       time--;
       Counter(time);
       refresh();
