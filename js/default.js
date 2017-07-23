@@ -1,61 +1,22 @@
-var time = 300;
+var sapce = 1050;
 
-/*
-//カウンドダウン表示
-    function count_down(){
-        if(count === 1){
-            var display = document.getElementById("default");
-            display.innerHTML = "TIME UP!";
-            clearInterval(stp);
-        } else {
-            count--;
-            min = parseInt(count / 60);
-            sec = count % 60;
-            var count_down = document.getElementById("default");
-            count_down.innerHTML = ("0"+min).slice(-2) +"：" + ("0"+sec).slice(-2);
-        }
-    }　
-*/
 
-//カウントダウン表示
-var Counter = function(){
-  
-  //document.getElementById("jikan").style.display="block";
-  
-  var timeShow_M = 0;
-  var timeShow_S;
-  
-  //分と秒を設定
-  timeShow_M = Math.floor(time / 60);
-  timeShow_S = time % 60;
-  
-  //分と秒を表示
-  var count_down = document.getElementById("jikan");
-  count_down.innerHTML =("0"+timeShow_M).slice(-2) +"：" + ("0"+timeShow_S).slice(-2);
+var downfall(){
+
+	// 「OK」時の処理開始 ＋ 確認ダイアログの表示
+	if(window.confirm('滅亡')){
+		location.href = "https://matome.naver.jp/odai/2146885392202874001";
+	}
+
+	// 「キャンセル」時の処理開始
+	else{
+		window.alert('キャンセルされました'); // 警告ダイアログを表示
+	}
+    
+    space -= 50;
+    
+    if(space == 0){
+        location.href = "https://matome.naver.jp/odai/2146885392202874001";
+    }
+    setTimeout(downfall, space);
 }
-
-//滅亡ボタン押した？
-var downfall = function(){
-  if(ret == true){
-    time -= 10;
-  }
-}
-
-//毎秒処理の中身、カウントダウン
-var update = function(){
-  do{
-      if(time === 0){
-       break;
-      } 
-      time--;
-      Counter();
-      refresh();
-  }while(true);
-}
-
-//update関数の処理時間設定
-var refresh = function(){
-  setTimeout(update, 1000);
-}
-
-update();
