@@ -30,8 +30,8 @@ var Counter = function(){
   timeShow_S = time % 60;
   
   //分と秒を表示
-  var count_down = document.getElementById();
-  count_down.innerHTML ="<div id=jikan>" + timeShow_M +"：" + timeShow_S + "</div>";
+  var count_down = document.getElementById("jikan");
+  count_down.innerHTML =timeShow_M +"：" + timeShow_S;
 }
 
 //滅亡ボタン押した？
