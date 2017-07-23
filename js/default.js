@@ -15,9 +15,9 @@ var Counter = function(){
   
   //分と秒を表示
   if(time < 60){
-    document.write("<p id=jikanYabade>", "0:", timeShow_S, "</p>");
+    document.write("<p id=jikanYaba>", "0:", timeShow_S, "</p>");
   }else{
-    document.write("<p id=jikan>", timeShow_M, ":", timeShow_S, "</p>");
+    document.write("<p id=jikande>", timeShow_M, ":", timeShow_S, "</p>");
   }
 }
 
