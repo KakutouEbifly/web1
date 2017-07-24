@@ -21,6 +21,10 @@ section{
   float-left;
 }
 
+#leftyose{
+  flat-right;
+}
+
 #gazou{
   position : center;
 }
