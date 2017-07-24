@@ -8,12 +8,17 @@ title{
   background-color: #e6e6fa;
 }
 
+h1{
+  
+}
+
 article{
   position-center;
 }
 
 section{
   float-left;
+  background-color: #778899;
 }
 
 #gazou{
