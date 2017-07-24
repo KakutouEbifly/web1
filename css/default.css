@@ -9,7 +9,7 @@ title{
 }
 
 h1{
-  
+  position: center;
 }
 
 article{
@@ -22,7 +22,7 @@ section{
 }
 
 #gazou{
-  position-center;
+  position : center;
 }
 
 #bigF{
